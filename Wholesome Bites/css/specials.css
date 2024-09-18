@@ -1,0 +1,65 @@
+@import url("./global.css");
+
+body {
+  width: 80%;
+  height: 90vh;
+  margin: 2em auto;
+  display: grid;
+  place-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.special-text {
+  position: relative;
+  top: 1em;
+}
+.special-header {
+  font-size: 4em;
+  color: var(--pink);
+}
+.little-info {
+  margin: 1em 0;
+  font-size: 2em;
+  opacity: 0.7;
+}
+button {
+  background-color: var(--pink);
+  display: grid;
+  place-content: center;
+  padding: 0.5em 2em;
+  height: 4em;
+  width: 20em;
+  border: none;
+  cursor: pointer;
+  transition: 200ms ease-in;
+  display: inline-block;
+  margin-bottom: 4em;
+}
+button {
+  color: white;
+  text-decoration: none;
+}
+button:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.special-image {
+  width: 90%;
+  margin: 0 auto;
+  pointer-events: none;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
+}
+.special-info {
+  opacity: 0.8;
+  width: 90%;
+  font-size: 1.2em;
+  line-height: 1.2;
+  margin: 2em auto;
+  padding: 2em;
+  color: var(--black);
+  background-color: rgba(233, 233, 233, 0.5);
+}

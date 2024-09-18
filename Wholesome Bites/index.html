@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homework website created by Aatif" />
+    <title>Wholesome Bites</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="black-bg"></div>
+    <div id="desktop">
+      <header>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="./pages/menu.html">Menu</a></li>
+            <li><a href="./pages/specials.html">Specials</a></li>
+            <li><a href="./pages/about.html">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="fas fa-search"></i>
+        </nav>
+      </header>
+      <main>
+        <div id="landing">
+          <div class="text">
+            <p class="small-header">Chef's Special</p>
+            <h3 class="big-header">Freshness In Every Bite</h3>
+            <p class="food-info">
+              Quality food focused on health and richness.
+            </p>
+            <a href="./pages/menu.html"><button>Download Menu</button></a>
+          </div>
+          <div class="image">
+            <img src="./img/banner.png" alt="banner food image" />
+          </div>
+        </div>
+        <hr class="seperator" />
+        <div id="home">
+          <div class="card" data-aos="fade-left">
+            <div class="card-text">
+              <h3 class="card-header">About this Project</h3>
+              <p class="card-info">
+                We all love food, you, me, everyone. So thats why I selected
+                food for my topic and I get really creative when something is
+                related to food. This page contains a top navbar, a fullscreen
+                landing section, and some information with really tempting food
+                images. Also I was having some browser issues with image map so
+                I was unable to use it. At the bottom there is a contact form,
+                which is ofcourse not working because there is not javascript
+                linked yet.
+                <br />
+                <b>THE PHOTOS ARE NOT RELATED TO THE TEXT</b>
+              </p>
+            </div>
+            <img src="./img/card1.jpg" alt="card image" class="card-image" />
+          </div>
+          <hr class="seperator" />
+          <div class="card" data-aos="fade-right">
+            <img src="./img/card2.jpg" alt="card image" class="card-image" />
+            <div class="card-text">
+              <h3 class="card-header">About Me ?</h3>
+              <p class="card-info">
+                I am Aatif, a Second Year Computer Science student doing daily
+                things along with a massive interest in computer programming and
+                the Internet. As a hobby I do Frontend Javascript, but if I
+                consider seriously, I would be really thankful to work as an
+                Open Source Developer or a Frontend Developer. Along with
+                Javascript I make C++ software and post on Github so that my
+                work is recognized and I always hope for the best.
+              </p>
+            </div>
+          </div>
+          <hr class="seperator" />
+        </div>
+      </main>
+      <footer id="contact">
+        <h3 class="card-header" style="text-align: center">
+          Lets Have a Chat !
+        </h3>
+        <form data-aos="fade-up">
+          <input type="text" placeholder="Your Good Name" />
+          <input type="email" placeholder="Your E-Mail Address" />
+          <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+          <button>Send</button>
+        </form>
+        <hr class="seperator" />
+      </footer>
+    </div>
+    <div id="mobile">
+      Why not enjoy this website on a bigger screen ? open this page again but
+      on a computer
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 120,
+        easeing: "ease-in-out",
+      });
+    </script>
+  </body>
+</html>

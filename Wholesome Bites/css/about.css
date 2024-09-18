@@ -1,0 +1,75 @@
+@import url("./global.css");
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.seperator {
+  margin: 10vh 0;
+  opacity: 0.5;
+}
+#welcome-to-gradys-git-world {
+  color: var(--pink);
+  margin-top: 0.7em;
+  font-size: 3em;
+}
+.portfolio {
+  color: var(--pink);
+}
+.knowledge {
+  margin: 0.7em;
+  list-style: circle;
+}
+.knowledge li {
+  margin: 0.5em;
+  color: var(--black);
+  opacity: 0.8;
+}
+#frontend-developer-entering-into-mern-stack-development,
+#languages-and-tools,
+#github-statistics {
+  margin-bottom: 1em;
+  color: var(--pink);
+}
+#tools-list {
+  padding: 1em;
+  width: 60%;
+  background-color: rgba(233, 233, 233, 0.7);
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#tools-list li {
+  margin: 1em;
+}
+.info {
+  margin-top: 10px;
+  color: var(--black);
+  opacity: 0.7;
+}
+.img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+button {
+  background-color: var(--pink);
+  display: grid;
+  place-content: center;
+  padding: 0.5em 2em;
+  height: 4em;
+  width: 20em;
+  border: none;
+  cursor: pointer;
+  transition: 200ms ease-in;
+  display: inline-block;
+  margin-bottom: 4em;
+}
+button {
+  color: white;
+  text-decoration: none;
+}
+button:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,37 @@
+:root {
+  --pink: #c75568;
+  --black: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans";
+  color: var(--black);
+}
+html {
+  transition: 200ms ease;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden !important;
+}
+a {
+  text-decoration: none;
+  transition: 200ms ease-in;
+}
+
+#mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #mobile {
+    display: block;
+  }
+  #desktop,
+  #black-bg {
+    display: none;
+  }
+}

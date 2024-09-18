@@ -1,0 +1,59 @@
+@import url("./global.css");
+
+.menu-header {
+  text-align: center;
+  margin: 0.5em;
+  font-size: 3em;
+  color: var(--pink);
+}
+
+th,
+td {
+  text-align: center;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+table {
+  text-align: left;
+  width: 60%;
+  margin: 2em auto;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 1em;
+}
+tr:nth-child(even) {
+  background-color: rgb(233, 233, 233);
+}
+th {
+  background-color: var(--pink);
+  color: white;
+  /* color: var(--pink); */
+}
+td {
+  color: var(--black);
+  opacity: 0.9;
+}
+
+button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--pink);
+  display: grid;
+  place-content: center;
+  padding: 0.5em 2em;
+  height: 4em;
+  width: 20em;
+  border: none;
+  cursor: pointer;
+  transition: 200ms ease-in;
+  display: inline-block;
+}
+button {
+  color: white;
+  text-decoration: none;
+}
+button:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}

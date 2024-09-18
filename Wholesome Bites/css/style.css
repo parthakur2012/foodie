@@ -1,0 +1,219 @@
+/* color variables */
+:root {
+  --pink: #c75568;
+  --black: #333333;
+}
+
+/* universal styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans";
+  color: var(--black);
+}
+html {
+  transition: 200ms ease;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden !important;
+}
+a {
+  text-decoration: none;
+  transition: 200ms ease-in;
+}
+ul,
+li {
+  list-style: none;
+}
+
+/* header section - navbar */
+nav {
+  width: 80%;
+  margin: 0 auto;
+  height: 12vh;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+nav * {
+  font-weight: 700;
+}
+nav ul li a {
+  opacity: 0.8;
+}
+nav ul {
+  display: flex;
+  gap: 4em;
+}
+nav ul li {
+  cursor: pointer;
+  padding-bottom: 1px;
+  position: relative;
+}
+nav ul li:before {
+  content: "";
+  position: absolute;
+  opacity: 0.8;
+  background-color: var(--pink);
+  border-radius: 5px;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  transform-origin: left;
+  transition: 200ms ease-in;
+  transform: scaleX(0);
+}
+nav ul a:hover {
+  color: var(--pink);
+}
+nav ul li:hover:before {
+  transform: scaleX(1);
+}
+nav i {
+  cursor: pointer;
+  transition: 200ms ease-in;
+  color: white;
+}
+nav i:hover {
+  color: var(--pink);
+}
+
+/* banner & landing  */
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+.small-header {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: var(--pink);
+}
+.big-header {
+  padding: 0.3em 0;
+  line-height: 0.9;
+  font-size: 5em;
+
+  opacity: 0.9;
+}
+.food-info {
+  font-size: 1.2em;
+  opacity: 0.8;
+  padding-top: 0.1em;
+}
+button {
+  background-color: var(--black);
+  display: grid;
+  place-content: center;
+  padding: 0.5em 2em;
+  height: 4em;
+  width: 20em;
+  margin-top: 2em;
+  color: white;
+  border-radius: 2em;
+  border: none;
+  cursor: pointer;
+  transition: 200ms ease-in;
+}
+button:hover {
+  background-color: var(--pink);
+  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.image img {
+  pointer-events: none;
+  position: relative;
+  left: 7%;
+}
+.seperator {
+  margin: 15vh 0;
+  opacity: 0.5;
+}
+
+/* home section style  */
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em 0;
+  gap: 10vw;
+  align-items: center;
+  justify-content: center;
+}
+.card-header {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: var(--pink);
+}
+.card-info {
+  opacity: 0.8;
+  font-size: 1.3em;
+  line-height: 1.5;
+  text-align: justify;
+}
+.card-image {
+  width: 100% !important;
+  border-radius: 2em;
+}
+
+/* footer style */
+footer {
+  width: 80%;
+  margin: 0 auto;
+}
+form {
+  display: grid;
+  justify-content: center !important;
+}
+form input,
+form textarea {
+  display: block;
+  width: 40vw;
+  padding: 1em;
+  margin: 0.5em 0;
+  border: solid 1px var(--pink);
+  font-size: 1.2em;
+  resize: none;
+}
+form button {
+  background-color: var(--pink);
+  border-radius: 0;
+  justify-self: center;
+  height: 3em;
+  width: 10em;
+  font-size: 1.2em;
+}
+
+/* miscellaneous id styling*/
+#landing {
+  position: relative;
+  top: -1em;
+  display: flex;
+  align-items: center;
+  height: 88vh;
+}
+#black-bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100vh;
+  background-color: var(--black);
+}
+#mobile {
+  display: none;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  #mobile {
+    display: block;
+  }
+  header,
+  main,
+  footer {
+    display: none;
+  }
+}
